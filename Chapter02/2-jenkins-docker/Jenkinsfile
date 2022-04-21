@@ -19,6 +19,7 @@ pipeline {
                 sh """
                 cd ${mainDir}
                 whoami
+                chmod +x gradlew
                 ./gradlew clean build
                 """
             }
